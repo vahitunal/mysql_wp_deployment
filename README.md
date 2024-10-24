@@ -3,6 +3,7 @@ ana kaynak: https://kubernetes.io/docs/tutorials/stateful-application/mysql-word
 
 yaml'larda pvc içlerine oluşturduğumuz storageclass'ı ekledik.
 dokümanda service ayarı Loadbalancer idi, clusterIP yaptık.
+openshift içine wordpress için route ekledik.
 
 wordpress deployment apache hatası verdi. onun için de anyuid ayarı yaptık.
 oc create sa nginx-sa
