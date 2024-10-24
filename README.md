@@ -2,7 +2,9 @@
 ana kaynak: https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/
 
 yaml'larda pvc içlerine oluşturduğumuz storageclass'ı ekledik.
-dokümanda service ayarı Loadbalancer idi, clusterIP yaptık.
+dokümanda service ayarı Loadbalancer idi, clusterIP olarak değiştirdik.
+dokümandaki gibi kubectl apply -k ./ yaptık ve her şey oluştu.
+
 openshift içine wordpress için route ekledik.
 
 wordpress deployment apache hatası verdi. onun için de anyuid ayarı yaptık.
